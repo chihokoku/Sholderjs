@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shoulderjs</title>
+    <!-- 以下の1行を追加でthree.jsが使える -->
+    <script src="https://unpkg.com/three@0.147.0/build/three.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script> -->
+    <!-- 以下の一行でカメラのズームイン・アウト、回転ができるようになる -->
+    <script src="https://unpkg.com/three@0.147.0/examples/js/controls/OrbitControls.js"></script>
+    <!-- objファイルを読み込ませるためのCDN -->
+    <script src="https://unpkg.com/three@0.147.0/examples/js/loaders/OBJLoader.js"></script>
+    <!-- stlファイルを読み込ませるためのCDN -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.157.0/examples/jsm/loaders/STLLoader.js"></script>
+    <!-- excelファイル出力するためのCDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.3/xlsx.full.min.js"></script>
+    <script type="module" src="script.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Sholderjs</h1>
+        <nav>
+          <input type="file" id="fileInput" accept=".obj,.stl" />
+        </nav>
+      </div>
+    </header>
+    <main>
+      <canvas id="canvas1" width="800" height="800"></canvas>
+    </main>
+  </body>
+</html>
